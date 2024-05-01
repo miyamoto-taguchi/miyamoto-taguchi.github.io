@@ -46,3 +46,23 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+ul {
+    list-style-type: none; /* リストマーカーを非表示にする */
+    padding: 0;
+}
+
+li {
+    background-color: #2a2a2a; /* 暗めの背景色でダークテーマを維持 */
+    color: #cccccc; /* 明るめのテキストカラー */
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* ほんのりとした影で浮き上がり感を演出 */
+    width: calc(100% - 30px); /* パディングを考慮した幅 */
+    box-sizing: border-box;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px; /* リストアイテム間のスペースを適切に設定 */
+}
