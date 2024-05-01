@@ -1,1 +1,0 @@
-# miyamoto-taguchi.github.io
