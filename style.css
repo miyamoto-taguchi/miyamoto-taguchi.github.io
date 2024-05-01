@@ -46,23 +46,41 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
 ul {
-    list-style-type: none; /* リストマーカーを非表示にする */
+    list-style-type: none;
     padding: 0;
+    margin-top: 20px; /* テキストとの間に適切なスペースを設定 */
+    width: 100%; /* リストの幅を調整 */
 }
 
 li {
-    background-color: #2a2a2a; /* 暗めの背景色でダークテーマを維持 */
-    color: #cccccc; /* 明るめのテキストカラー */
-    margin: 8px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* ほんのりとした影で浮き上がり感を演出 */
-    width: calc(100% - 30px); /* パディングを考慮した幅 */
-    box-sizing: border-box;
+    background-color: #333; /* 背景色を少し明るめに調整 */
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 1.25rem; /* フォントサイズを大きくする */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* シャドウを強調 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* トランスフォームのアニメーションを追加 */
 }
 
-li:not(:last-child) {
-    margin-bottom: 10px; /* リストアイテム間のスペースを適切に設定 */
+li:hover {
+    transform: translateY(-5px); /* ホバー時にリストアイテムを少し上に移動 */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5); /* ホバー時のシャドウを強調 */
+}
+
+/* リンクのスタイルを若干調整し、リストとのバランスを取る */
+.visit-link {
+    background-color: #0a84ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.visit-link:hover {
+    background-color: #0060df;
+    transform: scale(1.05); /* ホバー時にリンクが少し大きくなる */
 }
